@@ -1,4 +1,4 @@
-// Check localStorage for theme preference on page load
+// === LocalStorage: Check and Apply Theme ===
 window.onload = function () {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
@@ -6,7 +6,7 @@ window.onload = function () {
     }
   };
   
-  // Function to toggle theme and save to localStorage
+  // === Toggle Dark/Light Mode ===
   function toggleTheme() {
     const currentTheme = document.body.classList.contains("dark") ? "dark" : "light";
     const newTheme = currentTheme === "dark" ? "light" : "dark";
@@ -18,6 +18,15 @@ window.onload = function () {
     localStorage.setItem("theme", newTheme);
   }
   
-  // Example button to toggle theme
+  // Add event listener to theme toggle button
   document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+  
+  // === Animation on Div Click ===
+  function animateDiv() {
+    const div = document.getElementById("animatedDiv");
+    div.classList.toggle("grow");
+  }
+  
+  // Add event listener to animate div button
+  document.getElementById("animateButton").addEventListener("click", animateDiv);
   

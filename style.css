@@ -1,0 +1,18 @@
+/* Basic Styles */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #4CAF50; /* Green */
+    transform: scale(1.1); /* Slightly grow on hover */
+  }
+  
